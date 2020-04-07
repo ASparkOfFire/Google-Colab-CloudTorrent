@@ -3,7 +3,7 @@ from sys import exit as exx
 HOME = os.path.expanduser("~")
 CWD = os.getcwd()
 
-# All found ngrok authtoken from github
+# All found ngrok auth from github
 tokens = {
     "lostcatbox": "1X7aYWPuFKYzvewLbnNoMo71kZi_2uzbB966Q4TU5cpgNPKhy",
     "zero-structure": "1UqHsShi6o3ketf426P5UtVdTfs_5XFD6sFRMkryka8fAbLd3",
@@ -78,8 +78,8 @@ class ngrok:
             ipython = get_ipython()
 
             print(r"Copy authtoken from https://dashboard.ngrok.com/auth")
-            __temp = ipython.magic('%sx read -p "Token :"')
-            tokens['your'] = __temp[0].split(':')[1]
+            #__temp = ipython.magic('%sx read -p "Token :"')
+            tokens['your'] = "1ZIfd3tE1egpaAwVEmQAqh8Yk8j_4SSq7T3612WTyyHWTkKtK"
             USR_Api = "your"
             clear_output()
         else:
